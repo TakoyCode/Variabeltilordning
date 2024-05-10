@@ -30,13 +30,18 @@ namespace Variabeltilordning
             return tekst;
         }
 
-        public int ReturnWholeNumber()
-        {
-            return tall;
+        int tall1 = 1;
+        int tall2 = 2;
+
+
+        public int ReturnWholeNumber(int number, int number2)   
+        {   
+            return number + number2;
         }
 
         public double ReturnDouble()
         {
+            var number = Console.ReadLine();
             return desimalTall2;
         }
         public bool TrueFalse()
@@ -47,7 +52,7 @@ namespace Variabeltilordning
         public void Run()
         {
             Console.WriteLine($"Dette er en string : {ReturnString()}");
-            Console.WriteLine($"Dette er en int : {ReturnWholeNumber()}");
+            Console.WriteLine($"Dette er en int : {ReturnWholeNumber(tall1, tall2)}");
             Console.WriteLine($"Dette er en double : {ReturnDouble()}");
             Console.WriteLine($"Dette er en bool : {TrueFalse()}");
         }
